@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="./common.props" />
+  <PropertyGroup>
+    <Version>$(OdinVersion)</Version>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>OdinPlugs.OdinModels</AssemblyName>
+    <RootNamespace>OdinPlugs.OdinModels</RootNamespace>
+    <PackageId>OdinPlugs.OdinModels</PackageId>
+    
+    <Authors>$(OdinAuthors)</Authors>
+    <Company>$(OdinCompany)</Company>
+    <Copyright>$(OdinCopyright)</Copyright>
+    <Product>$(OdinProduct)</Product>
+    <Description>$(OdinDescription)</Description>
+    <RepositoryType>$(OdinRepositoryType)</RepositoryType>
+    <PackageTags>$(OdinPackageTags)</PackageTags>
+    <Title>OdinPlugs.OdinModels</Title>
+    <PackageProjectUrl>$(OdinGitUrl)/OdinPlugs.OdinModels</PackageProjectUrl>
+    <RepositoryUrl>$(OdinGitUrl)/OdinPlugs.OdinModels</RepositoryUrl>
+    <RepositoryBranch>master</RepositoryBranch>
+    <PackageIcon>icon.png</PackageIcon>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>$(OdinGenerateDocumentationFile)</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="images\icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OdinPlugs.OdinUtils\OdinPlugs.OdinUtils.csproj" />
+  </ItemGroup>
+</Project>
